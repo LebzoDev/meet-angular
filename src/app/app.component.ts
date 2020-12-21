@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'meet-projet';
+  name = 'Lebou dieye';
+  ok = false;
+  textAfficher ="Activer";
+  onClickbtn(){
+      this.ok = !this.ok;
+      this.textAfficher = !this.ok ? 'Activer' : 'Descativer';
+  }
 }
