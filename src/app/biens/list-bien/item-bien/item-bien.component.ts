@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Biens } from '../../biens';
 
 @Component({
   selector: 'app-item-bien',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./item-bien.component.css']
 })
 export class ItemBienComponent implements OnInit {
-
+  @Input() bien: any;
   constructor() { }
 
   ngOnInit(): void {
   }
+
+   
+ 
 
 }
